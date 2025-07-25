@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My layout.html</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+
+        /*This is header style*/
+        header {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfVBhEou7wfIO9A1vwLJfqSWvcnGv_z_4OVg&s);
+            background-size: cover;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: darkblue;
+            width: 100%;
+        }
+
+        header img {
+            height: 200px;
+            width: 150px;
+            border-radius: 70%;
+            border: 10px solid blanchedalmond;
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: darkslateblue;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: cornflowerblue;
+        }
+
+        .active {
+            background-color: deeppink;
+        }
+
+        /*.This.is.aside.style*/
+        aside {
+            height: 600px;
+            width: 30%;
+            text-align: center;
+            background-image: url(https://media.edinburgh.org/wp-content/uploads/2023/02/05140444/Interior-of-Portobello-Bookshop.jpg);
+            background-size: cover;
+            float: left;
+            color: coral;
+        }
+
+        section {
+            height: 600px;
+            width: 70%;
+            background-color: darksalmon;
+            float: left;
+        }
+
+        section .sectionpara {
+            padding-left: 100px;
+            color: cornsilk;
+            font-family: inherit;
+        }
+
+        footer {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfVBhEou7wfIO9A1vwLJfqSWvcnGv_z_4OVg&s);
+            text-align: center;
+            color:blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <h1>My hobby</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0L1LqDrvY8Qa1jqcH_mYHpbn-p0qe-D2-Yg&s"
+            alt="Logo">
+        <p>My hobby is writing.My ambition is to become a authoress.</p>
+    </header>
+    <aside>
+        <h2>Bookshop</h2>
+    </aside>
+    <section>
+        <div class="sectionpara">
+            <h2>The Advantage Of Reading</h2>
+            <p>1.Reading expands knowledge.</p>
+            <p>2.It reduces stress and improves mental well-being.</p>
+            <p>3.Reading enchances communication skill.</p>
+            <p>4.Reading can help us cope with sandness and depression.</p>
+            <p>5.Reading also improves our communication and interaction with others.</p>
+        </div>
+        <div class="card" style="width: 20rem; height: 20px;">
+  <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" class="card-img-top" alt="logo">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+    </section>
+
+    <footer>
+        <h2>Design by Phyo</h2>
+        <p style="font-size: 20px;";><em>Copyright @phyo</em></p>
+        <a href="mailto:phyo@gmail.com">Send Mail</a> 
+    </footer>
+</body>
+
+</html>

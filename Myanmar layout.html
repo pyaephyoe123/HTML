@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8" />
+  <title>eBook Mall</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Pyidaungsu', sans-serif;
+      background: #fafdff;
+      color: #2d3436;
+    }
+
+    header {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .nav-container {
+      background: #dff9fb;
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #b2bec3;
+    }
+
+    nav {
+      display: inline-block;
+      background: white;
+      border-radius: 10px;
+      padding: 10px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #0984e3;
+    }
+
+    .layout {
+      display: flex;
+      max-width: 1200px;
+      margin: 30px auto;
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .sidebar {
+      width: 25%;
+      background: #ecf9ff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .sidebar h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #0984e3;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+    }
+
+    .sidebar li {
+      background: white;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-left: 5px solid #74b9ff;
+      border-radius: 6px;
+    }
+
+    .main-content {
+      flex: 1;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .book {
+      background: #eef8ff;
+      border-radius: 14px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+      border: 1px solid #cceeff;
+    }
+
+    .book h2 {
+      font-size: 1.5rem;
+      color: #0984e3;
+      margin-bottom: 12px;
+    }
+
+    /* ပြင်ဆင်ထားသော author နဲ့ description style */
+    .book .author {
+      font-style: italic;
+      color: #34495e;
+      margin-bottom: 10px;
+      padding: 8px 12px;
+      background: #e0f7fa;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .book .description {
+      background: #f0faff;
+      padding: 14px 18px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 188, 212, 0.2);
+      font-size: 0.95rem;
+      color: #2c3e50;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #00cec9;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .subscribe {
+      background: #d0f0ff;
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+    }
+
+    .subscribe input[type='email'] {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .subscribe input[type='submit'] {
+      padding: 10px 20px;
+      background: #0984e3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #4facfe;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>🔵 eBook Mall</header>
+  <div class="nav-container">
+    <nav>
+      <a href="#">🏠 ပင်မ</a>
+      <a href="#">📚 အမျိုးအစား</a>
+      <a href="#">✉️ ဆက်သွယ်ရန်</a>
+    </nav>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>📚 အမျိုးအစားများ</h3>
+      <ul>
+        <li>📖 ဝတ္ထု</li>
+        <li>🧠 အတွေးအမြင်</li>
+        <li>📝 ကဗျာ</li>
+        <li>📘 အတ္ထုပ္ပတ္တိ</li>
+        <li>🏛 သမိုင်း</li>
+      </ul>
+    </aside>
+
+    <section class="main-content">
+      <div class="book">
+        <h2>📚 သံသရာ</h2>
+        <span class="author">✏️ စာရေးသူ - စောချစ်မောင်</span>
+        <p class="description">
+          ဘဝအပေါ်တွေးခေါ်မှုများ၊ လူ့ဘောင်ထဲမှ စိတ်ခံစားမှုတွေကို လှပစွာဖော်ပြထားတဲ့ စာအုပ်ဖြစ်ပါတယ်။
+        </p>
+        <a href="#" class="download-btn">🔘 Download Now</a>
+      </div>
+
+      <div class="book">
+        <h2>📚 နွေဦးပွင့်</h2>
+        <span class="author">✏️ စာရေးသူ - ဒေါ်ခင်ခင်သန်း</span>
+        <p class="description">
+          လူမှုရေးအခြေအနေများကို နူးညံ့သိမ်မွေ့စွာဖော်ပြထားသော စိတ်လှုပ်ရှားဖွယ်ဝတ္ထု။
+        </p>
+        <a href="#" class="download-btn">🔘 Download Now</a>
+      </div>
+
+      <div class="book">
+        <h2>📚 ငွေဖြူညိုမင်းသား</h2>
+        <span class="author">✏️ စာရေးသူ - လင်းအောင်</span>
+        <p class="description">
+          ကလောင်နှင့်ရယ်စရာအနုပညာတွေ ပါဝင်တဲ့ ပျော်ရွှင်ဖတ်လို့ကောင်းတဲ့ စာအုပ်။
+        </p>
+        <a href="#" class="download-btn">🔘 Download Now</a>
+      </div>
+
+      <div class="book">
+        <h2>📚 မြန်မာ့အတ္ထုပ္ပတ္တိ</h2>
+        <span class="author">✏️ စာရေးသူ - ဒေါက်တာနန်းမြင့်</span>
+        <p class="description">
+          မြန်မာ့ယဉ်ကျေးမှုနှင့် သမိုင်းအကြောင်းအရာများအပေါ် သေသပ်စွာဖော်ပြထားသည်။
+        </p>
+        <a href="#" class="download-btn">🔘 Download Now</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="subscribe">
+    <h3>📩 စာရင်းသွင်းရန်</h3>
+    <form>
+      <input type="email" placeholder="သင့်အီးမေးလ်ထည့်ပါ" required />
+      <input type="submit" value="Subscribe" />
+    </form>
+  </div>
+
+  <footer>
+    🔻 © 2025 eBook Mall | <a href="#">Privacy</a> | <a href="#">Contact</a>
+  </footer>
+</body>
+</html>.
